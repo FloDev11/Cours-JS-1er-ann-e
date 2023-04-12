@@ -1,0 +1,88 @@
+/* #region test */
+    .header-demande {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        padding: 4px 8px;
+        background-color: coral;
+        position: relative;
+    }
+
+    .header-info-entreprise {
+        width: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        padding: 4px 8px;
+
+        cursor: pointer;
+    }
+/* #endregion test */
+
+.statut-demande {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.demande-container {
+    /* Par défaut caché puis rendu visible via js pour faire petite animation */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+.demande-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.demande-container.draft .statut-demande {
+    background-color: #BEBEBE;
+}
+.demande-container.envoye .statut-demande {
+    background-color: #42d45f;
+}
+.demande-container.waiting .statut-demande {
+    background-color: #ffc93c;
+}
+.demande-container.refused .statut-demande {
+    background-color: #d53939; 
+}
+.header-demande .image-container {
+    height: calc(100% - 8px);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.header-demande .image-container .logo-entreprise{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nom-entreprise {
+    margin-right: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+
+.details-demande {
+    height: 0;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+    background-color: #FAFAFA;
+}
+.details-demande.visible {
+    padding: 4px 8px;
+}

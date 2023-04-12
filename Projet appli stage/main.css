@@ -1,0 +1,192 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+}
+
+#main_header{
+    color: white;
+    display: flex;
+
+}
+
+#main_header .image-container{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 12px;
+}
+
+.logo-appli{
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* bouton corner bas droit */
+
+#overlay_coner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+#overlay_coner.open {
+    z-index: 10;
+}
+#corner_buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: red;
+    transform: translateX(50%) translateY(50%);
+    transition: .3s all ease-in-out;
+}
+#corner_buttons.open {
+    height: 400px;
+    width: 400px;
+    z-index: 11;
+}
+
+#fab_1_container {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    background: #494949;
+    padding: 10px;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+
+
+#fab_2_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    border-radius: 50%;
+    background: #494949;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+#fab_2_container.open {
+    bottom: 35px;
+    right: 100px;
+    transform: scale(1);
+    z-index: 50;
+}
+
+
+#fab_3_container {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    transform: scale(0);
+    border-radius: 50%;
+    background: #494949;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+
+#fab_3_container.open {
+    bottom:100px;
+    right: 35px;
+    transform: scale(1);
+    z-index: 50;
+}
+
+footer a{
+    color: #FAFAFA;
+}
+
+#main_container {
+    max-width: 950px;
+    padding: 0 12px 60px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.playground-container{
+    background: #DEDEDE;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.playground-container.large{
+    max-width: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

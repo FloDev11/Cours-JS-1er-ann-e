@@ -1,0 +1,38 @@
+#overlay_coner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+#overlay_coner.open {
+    z-index: 10;
+}
+#corner_buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: red;
+    transform: translateX(50%) translateY(50%);
+    transition: .3s all ease-in-out;
+}
+#corner_buttons.open {
+    height: 400px;
+    width: 400px;
+    z-index: 11;
+}
+
+#fab_1_container {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    background: #494949;
+    padding: 10px;
+    color: #FAFAFA;
+    cursor: pointer;
+}

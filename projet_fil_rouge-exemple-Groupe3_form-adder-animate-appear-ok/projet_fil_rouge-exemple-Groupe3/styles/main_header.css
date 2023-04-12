@@ -1,0 +1,27 @@
+#header_visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#header_visible .logo-container {
+    height: 100%;
+}
+#header_visible .logo-container img{
+    max-height: calc(100% - 8px);
+    padding: 4px;
+}
+#btn_open_filters {
+    cursor: pointer;
+}
+
+#filtres_container {
+    background-color: #FAFAFA;
+    height: 0;
+    transition: 0.2s all ease-in-out;
+    overflow: hidden;
+}
+/* #filtres_container.open {
+    height: auto;
+} */

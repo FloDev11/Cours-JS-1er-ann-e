@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples cours</title>
+
+    <script src="./scripts/variables_et_operateurs.js" defer></script>
+    <script src="./scripts/conditions_et_boucles.js" defer></script>
+    <script src="./scripts/modifications_dom.js" defer></script>
+    <script src="./scripts/formulaire_exemple.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/menu_drawer.css">
+    <link rel="stylesheet" href="./styles/accordeons.css">
+</head>
+<body>
+
+    <div id="overlay">
+    </div>
+   
+    <header id="main_header">
+        <img id="header_logo" src="./images/mds-logo.png" alt="">
+
+        <span id="btn_open_menu" class="mdi mdi-menu mdi-36px"></span>
+       
+        <div id="menu_drawer">
+            <span id="btn_close_menu" class="mdi mdi-close mdi-36px"></span>
+        </div>    
+    </header>
+
+
+
+
+
+    <script>
+       console.log("il est aussi possible techniquement d'écrire du javascript directement d'ici"); 
+    </script>
+
+  
+    
+    
+
+    
+
+    <main>
+        <h1>
+            Codes pour illustrer le cours
+        </h1>
+
+        <section id="variables_et_operateurs">
+
+            <h2>
+                Liste manipulée par le DOM
+            </h2>
+            <ul id="liste_basique">
+                <li>
+                    Premier item 
+                </li>
+
+                <li>
+                    Deuxième item
+                </li>
+
+                <li>
+                    Troisième item
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section id="animations">
+            <h2>
+                Animations
+            </h2>
+
+
+            <h3>
+                Accordéons
+            </h3>
+
+            <div id="accordeon_container">
+                <div class="accordeon-item">
+                    <div class="accordeon-header">
+                        Div a cliquer pour ouvrir / fermer le accordeon-content
+                    </div>
+                    <div class="accordeon-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et accusantium fugiat id, recusandae nemo error ducimus debitis odit velit eos rem numquam beatae tempore voluptatem, rerum quod labore dolorum?
+                    </div>
+                </div>
+
+                <div class="accordeon-item">
+                    <div class="accordeon-header">
+                        Deuxième div
+                    </div>
+                    <div class="accordeon-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos nobis corporis facilis nulla itaque? Et, iure doloremque a, eos, pariatur beatae enim voluptates suscipit nobis facere accusamus ipsa dolore!
+                        Iure ullam labore nemo iusto voluptatum, ad dolorum dicta ex itaque distinctio, ipsum quasi, dignissimos asperiores consectetur nesciunt a. Necessitatibus doloremque nisi voluptatibus unde veritatis harum vero, placeat ea? Nobis.
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section id="exemple_formulaire">
+            <h2>
+                Exemple de formulaire
+            </h2>
+
+            <form id="form_exemple" >
+                <p>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom">
+                </p>
+                <p>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom">
+                </p>
+                
+                <input type="submit" value="Valider">
+            </form>
+
+            <ul id="liste_users">
+
+            </ul>
+
+             
+        </section>
+    </main>
+
+
+    <!-- Il est aussi possible de charger un script depuis une balise script dans le body,
+        mais beaucoup de développeur préfère mettre les scripts dans le head.
+
+        Pas besoin du defer si la balise est en bas du body.
+    -->
+    <script src="./scripts/autre_script.js"></script>
+
+</body>
+</html>

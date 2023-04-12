@@ -1,0 +1,25 @@
+#nav_filters {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #EEEEEE;
+}
+
+#nav_filter_input_search {
+    flex: 1;
+    margin: 0 12px;
+}
+
+#filters_container {
+    height: 0px;
+    background-color: #808080;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+}
+
+#btn_filters {
+    cursor: pointer;
+}
+

@@ -1,0 +1,24 @@
+.accordeon-item{
+    overflow: hidden;
+}
+
+.accordeon-header{
+    background-color: #DEDEDE;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+}
+
+.accordeon-header:hover{
+    background-color: #999999;
+
+}
+
+.accordeon-content{
+    height: 0;
+    transition: .5s all ease-in-out;
+}
+
+.accordeon-content.opent{
+    height: 400px;
+}

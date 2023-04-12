@@ -1,0 +1,40 @@
+#corner_buttons {
+    background: red;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) translateY(50%);
+    transition: .5s all ease-in-out;
+}
+
+#corner_buttons.open{
+    height: 400px;
+    width: 400px;
+    z-index: 11;
+}
+
+#fab_1_container{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#overlay_corner{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+#overlay_corner.open{
+    z-index: 10;
+    background: blue;
+}

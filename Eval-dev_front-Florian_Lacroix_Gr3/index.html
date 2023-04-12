@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Dev_Front_B1</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/exercice_actus.css">
+
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/exercice_actualites.js" defer></script>
+    <script src="./scripts/exercice_tableau.js" defer></script>
+</head>
+<body>
+    <main id="root_main">
+        <section id="exercice_1">
+            <h2>
+                Lier un fichier JavaScript et un fichier CSS /1
+            </h2>
+
+            <ul>
+                <li>
+                    Liez le fichier style.css qui se trouve dans le dossier styles à cette page.
+                </li>
+                <li>
+                    Créez un fichier main.js dans le dossier scripts et liez le à cette page HTML.
+                </li>
+                <li>
+                    Faire apparaître dans la console le message "Fichier main.js en place."
+                </li>
+                <li id="message_a_remplacer">
+                    Remplacer ce texte par : "Texte remplacé via main.js"
+                </li>
+            </ul>
+
+            <p class="notice"> 
+                Si vous n'y arrivez pas, demandez-moi pour pouvoir avancer sur la suite des exercices.
+            </p>
+        </section>
+
+        <section id="exercice_2">
+            <h2>
+                Manipuler une variable simple /2
+            </h2>
+
+            <ul>
+                <li>
+                    Créez une variable "compteur" initialisée à 0 dans votre main.js 
+                </li>
+                <li>
+                    Affichez dans la div ci-dessous un élément qui affiche la valeur de ce compteur
+                </li>
+                <li>
+                    Créez un bouton dans la div ci-dessous qui permet de faire augmenter ce compteur de 1 à chaque clique
+                </li>
+                <li>
+                    Faire en sorte que le compteur retourne à zéro tous les 10 coups 
+                    <br>
+                    <small><i>Faire en sorte qu'après le 10, on retourne à 1...</i></small>
+                </li>
+            </ul>
+
+            <div>
+                <!-- Votre code ici -->
+                <span id="compteur"></span>
+                <button id="ajout_compteur">Ajouter au compteur</button>
+            </div>
+        </section>
+
+
+        <section id="exercice_jour_nuit" class="jour">
+            <h2>
+                Animation au clic /3
+            </h2>
+
+            <ul>
+                <li>
+                    Depuis le fichier style.css et le fichier main.js, faites en sorte qu'au clic sur le bouton suivant, le fond de cette section passe du blanc au gris foncé et que le texte passe du noir au blanc.
+                </li>
+                <li>
+                    Remplacer en même temps le texte du bouton "mode jour" (quand on est en mode nuit) et "mode nuit" (quand on est en mode jour)
+                </li>
+                <li>
+                    A chaque clic on doit pouvoir passer d'un mode à l'autre 
+                </li>
+                <li>
+                    Le changement doit se faire avec une transition.
+                </li>
+            </ul>
+
+
+            <button id="light_dark">
+                Mode nuit
+            </button>
+        </section>
+
+
+        <section id="exercice_tableau">
+            
+            <h2>
+                Utiliser un tableau simple /3
+            </h2>
+
+            <ul>
+                <li>
+                    Lier le fichier exercice_tableau.js du dossier scripts à cette page
+                </li>
+                <li>
+                    En utilisant le "fruits_disponibles" fournit dans ce fichier,  Afficher dans l'ul ci-dessous la liste des fruits disponibles.
+                </li>
+                <li>
+                    Depuis ce même fichier, faire une fonction pour récupérer la valeur saisie dans l'input "fruit_desire" au clic sur le bouton "valid_choice" et vérifier si le fruit est présent parmi les fruits disponibles.
+                    <ul>
+                        <li>Afficher "disponible" dans message_exercice_fruit si présent.</li>
+                        <li>Afficher "non disponible" si non présent.</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div id="resultat_exercice_tableau">
+                <ul id="liste_fruits">
+
+                </ul>
+
+                <span id="message_exercice_fruit">
+
+                </span>
+
+                <p>
+                    <label for="fruit_desire">Votre choix</label>
+                    <input type="text" id="fruit_desire">
+                </p>
+                <button id="valid_choice">
+                    Valider
+                </button>
+            </div>
+
+        </section>
+
+        <section id="exercice_actu_1">
+            <h2>
+                Reproduire la structure ci-dessous /3
+            </h2>
+
+            <ul>
+                <li>
+                    Lier le fichier exercice_actus.css du dossier styles à cette page.
+                </li>
+                <li>
+                    Mettre le CSS nécessaire à la reproduction de l'image à l'intérieur de ce fichier.
+                    <br>
+                    <small><i>Mettez les typos et les couleurs que vous voulez. Les images sont dans le dossier images.</i></small>
+                </li>
+            </ul>
+
+            <img src="./images/a-reproduire.png" alt="">
+
+        </section>
+
+        <section id="exercice_actus_2">
+            <h2>
+                Formulaire d'ajout /3
+            </h2>
+
+            <ul>
+                <li>
+                    Créez un formulaire en respectant les conventions permettant d'ajouter un nouvel article à votre liste.
+                </li>
+                <li>
+                    Liste des champs / type associé :
+                    <ul>
+                        <li>
+                            Titre de l'article
+                        </li>
+                        <li>
+                            url de l'image / texte
+                        </li>
+                        <li>
+                            Auteur / texte 
+                        </li>
+                        <li>
+                            Catégorie / select
+                            <br> 
+                            <small>
+                                <i>
+                                    Liste des catégories
+                                </i>
+                            </small>
+                            <ul>
+                                <li>
+                                    Dev front   
+                                </li>
+                                <li>
+                                    Base de données 
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Date de publication / date
+                        </li>
+                        <li>
+                            Résumé / textarea 
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li>
+                    Faire en sorte que ce formulaire apparaisse dans une modal au clic sur le bouton "ajouter un article" de l'exercice précédent
+                </li>
+            </ul>
+        </section>
+
+        <section id="exercice_actus_3">
+            <h2>
+                Validation du formulaire /3
+            </h2>
+            
+            <ul>
+                <li>
+                    Lier le fichier exercices_actualites.js qui se trouve dans le dossier scripts à cette page.
+                </li>
+                <li>
+                    Faites en sorte de créer un nouvel item à votre liste d'articles à la validation du formulaire.
+                </li>
+                <li>
+                    Faites en sorte qu'en fonction de la catégorie choisie, le design de la pastille soit différent.
+                </li>
+                <li>
+                    Faites en sorte de réinitialiser le formulaire et de fermer la modal après validation.
+                </li>
+            </ul>
+        </section>
+
+        <section id="exercice_accordeon">
+            <h2>
+                Mettre en place un accordeon /2
+            </h2>
+
+            <ul>
+                <li>
+                    Depuis le fichier main.js, faites en sorte que chaque exercice de cette page apparaisse via un système d'accordéon.
+                </li>
+                <li>
+                    => Cacher les consignes et les contenus des exercices par défaut et faite en sorte de les faire apparaitre au clic sur le h2
+                </li>
+                <li>
+                    Vous aurez besoin d'ajouter des éléments dans la page et de travailler le CSS.
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+
+            <header>
+                <h1>Actualités</h1>
+            </header>
+            
+            <div id="main_liste">
+                <div id="liste_actus">
+                    <div class="header-actus">
+                        <h2>Titre de l'article</h2>
+                        <span class="types_actus"></span>
+                        
+                        <span class="auteur_actus">Rédigé par Florian Lacroix le 30/03/2023 à 11h24</span>
+                        <div class="image-container">
+                            <img class="image-actus" src="./images/illus-article.jpg" alt="">
+                        </div>
+                        
+                        <div class="header-article">
+                            
+                            <span class="text-article">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dolorem vitae asperiores repellendus, numquam eaque magnam tenetur veritatis? Quis voluptatum reprehenderit recusandae ea nesciunt. Neque, dolores? Pariatur enim recusandae esse!
+                            </span>
+                            
+                            
+                        </div>
+    
+                        <div>
+                            <button id="btn_more">Lire plus</button>
+                        </div>
+            
+                    </div>
+            
+                
+                </div>
+    
+    
+                
+                <button id="ajout_article">Ajouter un article</button>
+                
+    
+            </div>
+
+            
+        </section>
+
+        <div id="overlay_form" ></div>
+        
+        <div id="form_modal">
+            <form action="" id="form_article">
+                <label for="title_article">Titre de l'article</label>
+                <input type="text" id="title_article" name="title_article">
+
+                <label for="url_image">URL de l'image</label>
+                <input type="text" id="url_image">
+
+                <label for="auteur">Auteur de l'article</label>
+                <input type="text" id="telephone">
+
+                <label for="categorie">Catégorie</label>
+                <select name="categorie" id="categorie">
+                    <option value="">Dev front</option>
+                    <option value="">Base de données</option>
+                </select>
+
+                <label for="date">Date de publication</label>
+                <input type="date" id="date">
+
+                <label for="resume">Résumé de l'article</label>
+                <textarea id="resume" name="resume"></textarea>
+
+                
+
+                <button id="valid">Valider</button>
+
+            </form>
+        </div>
+            
+
+
+
+    </main>
+</body>
+</html>

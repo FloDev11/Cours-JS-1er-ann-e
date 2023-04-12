@@ -1,0 +1,215 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles pour le wrapper principal */
+  #main_wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles pour l'en-tête */
+  #main_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .logo-appli {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  /* Styles pour le bouton */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Styles pour le formulaire */
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 40%;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+
+/* Modal cache du formulaire (ajouter un élément) */
+
+
+#overlay_form{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 13, 255, 0);
+    transition: .3s all ease-in-out;
+}
+#overlay_form.open {
+    z-index: 10;
+    background-color: rgba(175, 175, 175, 0.281);
+}
+#form_demo {
+    position: fixed;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #FAFAFA;
+    margin-top: 50%;
+    margin-left: 50%;
+    transition: .2s all ease-in-out;
+    overflow: hidden;
+}
+#form_demo.open {
+    z-index: 11;
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 60%;
+    height: 60%;
+    padding: 0%  10%;
+}
+
+/* Liste des éléments (nouvelle entreprise) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Styles pour le pied de page */
+  #main_footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  #main_main {
+    color: white;
+  }
+  select {
+    color: black;
+  }
+
+ #valid {
+    margin-left: 25vh ;
+}
+
+
+
+
+
+
+
+
+.header-entreprise div{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  border: solid #007bff 3px;
+  border-radius:5px 5px 0px 0px ;
+}
+
+
+
+
+.detail-entreprise div{
+display: flex;
+flex-direction: column;
+background-color: rgb(255, 255, 255);
+padding: 30px;
+border: solid #000000 2px;
+border-radius: 0px 0px 5px 5px;
+overflow: hidden;
+}
+
+

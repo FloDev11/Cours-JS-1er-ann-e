@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux du plus ou moins</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <h1>
+            Jeux du plus ou moins 
+        </h1>
+
+
+        <div id="playground" class="pa-2" >
+            <div id="infos_jeu">
+                <span>
+                    Nombre de coups joués 
+                </span>
+
+                <div class="text-large ml-2">
+                    <span id="nb_coups_joues"></span>
+                    / 
+                    <span id="nb_coups_max"></span>
+                </div>
+            </div>
+
+            <div id="message_jeu_container">
+                <span id="message_jeu">
+                    
+                </span>
+            </div>
+
+            <div id="zone_saisie">
+                <input id="valeur_saisie" min="0" type="number" >
+                <button id="btn_submit" class="btn-basique" disabled >Valider</button>
+            </div>
+
+            <button id="btn_rejouer" class="btn-basique">
+                Rejouer
+            </button>
+        
+            <div>
+                <span class="ml-2">
+                    Valeurs déjà testées :
+                </span>
+                <ul id="liste_valeurs_saisies">
+    
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

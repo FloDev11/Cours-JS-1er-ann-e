@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'ajout</title>
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="formulaire-ajout.css">
+
+    <script src="../script/formulaire.js" defer></script>
+    <script src="../script/script butoncorner.js" defer></script>
+
+    <!-- mdi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <div id="main_wrapper">
+        <div id="main_header">
+            <div class="image-container">
+                <img class="logo-appli" src="../images/OIP (3).jfif" alt="">
+            </div>
+
+            <h1>
+                Liste des entreprises
+            </h1>
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div>
+            <button id="btn_open_form">
+                Ajouter une entreprise
+            </button>
+        </div>
+        
+        
+        <div id="overlay_form" ></div>
+        <div id="form_demo" >
+
+            <h2>Formulaire d'ajout</h2>
+
+            <form action="" id="form_entreprise">
+                <label for="nom_entreprise">Nom de l'entreprise :</label>
+                <input type="text" id="nom_entreprise" name="nom_entreprise">
+
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse">
+
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="info_entreprise">Informations complémentaires</label>
+                <textarea id="info_entreprise" name="info_entreprise"></textarea>
+
+                <label for="statut">Statut</label>
+                <select name="statut" id="statut">
+                    <option value="draft">Brouillon</option>
+                    <option value="">En attente</option>
+                    <option value="">Accepter</option>
+                    <option value="">Refuser</option>
+
+                </select>
+
+                <button id="valid">Valider</button>
+
+            </form>
+
+        </div>
+
+
+        <div id="Container_list_entreprise">
+
+            <div class="Container-entreprise visible">
+
+                <div class="header-entreprise">
+
+                    <span class="statut-demande"></span>
+
+                    <div>
+                    
+                        Nom de l'entreprise : <span class="nom-entreprise"></span> 
+                    
+                        Adresse de l'entreprise :<span class="adresse-entreprise"></span>
+
+                        
+                    
+                    </div>
+
+                </div>
+
+                
+                <div class="detail-entreprise">
+
+                    <div>
+                        
+                        Téléphone de l'entreprise : <span class="tel-entreprise"></span>
+                        
+                        Email de l'entreprise : <span class="email-entreprise"></span>
+
+                        Informations sur l'entreprise : <p class="note-entreprise"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="main_footer">
+
+
+
+        </div>
+
+    </div>
+    <footer>
+        <!-- bouton corner bas droit -->
+        <div >
+                
+            <div class="playground-container large">
+                <div id="corner_buttons"></div>
+                <div class="" id="overlay_coner">
+                    
+                </div>
+                <div id="fab_1_container">
+                    <span id="fab_1" class="mdi mdi-menu mdi-36px">
+                    </span>
+                </div>
+
+                <div class="" id="fab_2_container">
+                    <a href="../index.html">
+                        <span id="fab_2" class="mdi mdi-home mdi-36px">
+                        </span>
+                    </a>
+                </div>
+
+                <div class="" id="fab_3_container">
+                    <a href="./formulaire-ajout.html">
+                        <span class="mdi mdi-format-list-bulleted mdi-36px"></span>
+
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

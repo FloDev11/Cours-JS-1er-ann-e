@@ -1,0 +1,87 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-large {
+    font-size: 24px;
+}
+.ml-2 {
+    margin-left: 8px;
+}
+
+.btn-basique {
+    text-decoration: none;
+    color: black;
+    padding: 4px 8px;
+    background-color: #be6765;
+    transition: .3s all ease-in-out;
+    border-radius:4px; 
+    cursor: pointer;
+}
+
+.btn-basique:hover:not(:disabled) {
+    background-color: #d68478;
+}
+.btn-basique:disabled{
+    cursor: not-allowed;
+    background-color: #BABABA;
+}
+
+#playground {
+    border: 1px solid #494949;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#infos_jeu {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+#message_jeu_container {
+    width: 100%;
+    height: 250px;
+    background-color: #494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message_jeu {
+    color: #FAFAFA;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+#zone_saisie {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+#zone_saisie.cachee {
+    display: none;
+}
+#valeur_saisie {
+    width: 50px;
+    margin-right: 4px;
+}
+
+#btn_rejouer {
+    margin: 8px auto;
+    display: none;
+}
+#btn_rejouer.visible {
+    display: inline-block;
+}

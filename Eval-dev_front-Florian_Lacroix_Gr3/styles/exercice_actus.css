@@ -1,0 +1,90 @@
+header {
+    background-color: #686868;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#main_liste {
+    background-color: #e6e6e6;
+    
+}
+
+#liste_actus {
+    
+    border: 0.5px solid #686868;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+
+
+#overlay_form{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 13, 255, 0);
+    transition: .3s all ease-in-out;
+}
+#overlay_form.open {
+    z-index: 10;
+    background-color: rgba(175, 175, 175, 0.281);
+}
+
+#form_modal {
+    position: fixed;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #FAFAFA;
+    margin-top: 50%;
+    margin-left: 50%;
+    transition: .2s all ease-in-out;
+    overflow: hidden;
+}
+#form_modal.open {
+    z-index: 11;
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 40%;
+    height: 60%;
+    padding: 0%  10%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 20%;
+    
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+  }

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/accordeon.css">
+    <link rel="stylesheet" href="styles/corner_buttons.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/tabs.css">
+    <link rel="stylesheet" href="styles/nav_filters.css">
+    <link rel="stylesheet" href="styles/formulaire_dynamique.css">
+
+    <script src="scripts/accordeon.js" defer> </script>
+    <script src="scripts/corner_buttons.js" defer> </script>
+    <script src="scripts/modal.js" defer> </script>
+    <script src="scripts/tabs.js" defer> </script>
+    <script src="scripts/formulaire_dynamique.js" defer></script>
+    <script src="scripts/nav_filters.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Pour retrouver les icons : https://pictogrammers.com/library/mdi/ -->
+</head>
+<body>
+
+    <main id="main_container">
+
+
+        <!-- Exercices basique to prepare :
+        
+            je fourni un jeu de donnée pour afficher une vignette produit
+            -> Maquette todo + inté ou code direct et mise en exo. 
+            De base je fourni le jeu de data
+
+            copie colle + après présentation .innerHTML avec backtile
+        
+        -->
+
+        <!-- 
+            Objectif: qu'ils soient capable de faire une animation en toggle class au moin.. 
+             quels types d'animations : 
+                - expand au click
+                - 
+
+         -->
+
+
+
+        <div id="formulaire_dynamique">
+            <h2>
+                Formulaire dynamique 
+            </h2>
+
+            <form id="form_produit">
+                <p>
+                    <label for="categorie_produit">Catégorie:</label> 
+                    <select name="categorie" id="categorie_produit">
+                        <option value="">Choisir une categorie</option>
+                        <option value="cosmetique">Cosmetique</option>
+                        <option value="alimentaire">Alimentaire</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </p>
+
+                <input type="checkbox" id="test_checkbox" name="test-checkbox" >
+                <label for="test_checkbox">Test checkbox</label>
+                
+
+                <div id="categorie_autre">
+                    <p>
+                        <label for="autre_categorie">Autre catégorie:</label> 
+                        <input type="text" id="autre_categorie" name="autre_categorie" />
+                    </p>
+                </div>
+
+                <div id="sub_form_cosmetique">
+                    <p>
+                        <label for="cosmetique_composants">Composants:</label> 
+                        <input type="textarea" id="cosmetique_composants" name="composants" />
+                    </p>
+                </div>
+
+                <div id="sub_form_alimentaire">
+                    <p>
+                        <label for="alimentaire_ingredients">Ingrédients:</label> 
+                        <input type="textarea" id="alimentaire_ingredients" name="ingredients" />
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+        <div>
+            <h2>
+                Filtres au click
+            </h2>
+
+            <div class="playground-container">
+                <div id="nav_filters">
+                    <span class="mdi mdi-web mdi-36px"></span>
+                    <input id="nav_filter_input_search" type="text">
+                    <span id="btn_filters" class="mdi mdi-cog mdi-36px">
+                    </span>
+                </div>
+                <div id="filters_container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, excepturi eaque! Optio, cumque vitae perferendis repellendus laboriosam excepturi, repudiandae veniam aliquam molestiae vero omnis voluptates, ducimus natus architecto! Adipisci, corrupti.
+                    Voluptas neque quas numquam iusto blanditiis eaque? Suscipit exercitationem repellendus, nobis adipisci tempore labore saepe rem consequuntur, repudiandae doloribus asperiores officiis omnis officia consectetur, nostrum atque hic ullam assumenda accusamus?
+                    Incidunt ut rem voluptas itaque aperiam quibusdam delectus aliquid illum! Culpa, molestias autem. Minima unde eaque fugit a vel! Vel debitis minus facere quas veritatis dicta reiciendis rem? Cumque, optio!
+                    Laboriosam quae dicta, error eligendi impedit neque facere optio quidem quis suscipit molestiae eius doloremque nam culpa explicabo quos rem adipisci, modi expedita inventore minima eos? Recusandae totam veritatis inventore!
+                </div>
+            </div>
+        </div>
+
+
+        <div id="exercice_1">
+            <h2>
+                Accordéons
+            </h2>
+
+            <div id="accordeon_container">
+                <div class="accordeon-item">
+                    <div class="accordeon-header">
+                        Div a cliquer pour ouvrir / fermer le content
+                    </div>
+                    <div class="accordeon-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et accusantium fugiat id, recusandae nemo error ducimus debitis odit velit eos rem numquam beatae tempore voluptatem, rerum quod labore dolorum?
+                    </div>
+                </div>
+
+                <div class="accordeon-item">
+                    <div class="accordeon-header">
+                        Deuxième div
+                    </div>
+                    <div class="accordeon-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos nobis corporis facilis nulla itaque? Et, iure doloremque a, eos, pariatur beatae enim voluptates suscipit nobis facere accusamus ipsa dolore!
+                        Iure ullam labore nemo iusto voluptatum, ad dolorum dicta ex itaque distinctio, ipsum quasi, dignissimos asperiores consectetur nesciunt a. Necessitatibus doloremque nisi voluptatibus unde veritatis harum vero, placeat ea? Nobis.
+                    </div>
+                </div>
+
+                <div class="accordeon-item">
+                    <div class="accordeon-header">
+                        Troisième div
+                    </div>
+                    <div class="accordeon-content">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas sed quidem quod ut, amet eius ad neque, maiores rem at labore ab recusandae saepe quam fugit sequi alias reprehenderit.
+                       Doloremque minus illo vitae necessitatibus labore velit delectus ipsum assumenda voluptate deserunt nostrum earum commodi distinctio omnis praesentium optio, veniam quod eius expedita dignissimos molestiae dolore. Inventore, eligendi provident? Id.
+                       Dolore error corporis facere sunt ipsam perspiciatis doloremque voluptates esse, minus fuga, enim molestiae eius commodi vitae dicta at beatae impedit praesentium repellendus. Incidunt asperiores dolorem nobis impedit deserunt atque!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercice_2">
+            <h2>
+                Div visible au clique sur bouton
+            </h2>
+
+            <div class="playground-container large">
+                <div id="overlay_coner">
+
+                </div>
+                <div id="fab_1_container">
+                    <span id="fab_1" class="mdi mdi-menu mdi-36px">
+                    </span>
+                </div>
+
+                <div id="corner_buttons">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="exercice_3">
+            <h2>
+                Modal
+            </h2>
+
+            <div class="playground-container x-large">
+                <button id="btn_open_modal">
+                    Click for modal
+                </button>
+                <div id="overlay_modal" ></div>
+                <div id="modal_demo" >
+
+                </div>
+            </div>
+        </div>
+
+        <div id="exercice_4">
+            <h2>
+                Tabs 
+            </h2>
+
+            <div class="playground-container">
+                <div id="skylight_tabs">
+                    <div id="tabs_panels_container">
+                        <div id="panel_hompage" class="panel-tab">
+                            Home
+                        </div>
+        
+                        <div id="panel_liste" class="panel-tab">
+                            Liste
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab_nav_bottom">
+                    <div class="tabitem-nav" id="tabnav_home">
+                        <span class="mdi mdi-home mdi-36px">
+
+                        </span>
+                    </div>
+                    <div class="tabitem-nav" id="tabnav_liste">
+                        <span class="mdi mdi-format-list-checkbox mdi-36px">
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

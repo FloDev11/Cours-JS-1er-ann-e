@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du pendu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="pendu.css">
+    <script src="pendu.js" defer></script>
+</head>
+<body>
+    <div id="main_container">
+        <h1>
+            Jeu du pendu
+        </h1>
+
+       
+
+        <div id="playground">
+            
+            <div id="mot_a_trouver">
+
+                <!-- <span id="lettre__0" class="lettre-a-trouver">
+                    
+                </span>
+
+                <span id="lettre__1" class="lettre-a-trouver trouvee">
+                    A
+                </span> -->
+            </div>
+            
+            <div class="flex-center">
+                <img id="image_du_pendu" src="./_ressources/1.png" alt="" >
+            </div>
+            
+            <span id="message_utilisateur" class="hidden">
+                Message
+            </span>
+        
+            <div id="recap_lettres_testees" class="hidden">
+                <span>
+                    Lettres déjà testées :
+                </span>
+                <ul id="lettres_testees" >
+                </ul>
+            </div>
+
+            <div>
+                <label for="lettre_saisie">
+                    Choisir une lettre
+                </label>
+                <input class="input-pendu" 
+                    type="text" 
+                    id="lettre_saisie"
+                    maxlength="1"
+                >
+                <button id="btn_valid" class="btn-pendu" >                    
+                    <span class="mdi mdi-check"></span>
+                </button>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>

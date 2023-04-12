@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux du plus ou moins</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <script src="../scripts/main.js" defer></script>
+    <script src="scripts/jeux-du-plus-ou-moins.js" defer></script>
+    
+
+</head>
+<body>
+
+    <div id="overlay" class="hidden"></div> 
+    <div id="navigation_drawer">
+        <nav >
+            <ul>
+                <span id="btn_close_drawer" class="mdi mdi-close mdi-36px"></span>
+                <li class="root-link-drawer">
+                    <a href="index.html" id="link">Home</a>
+                    
+                </li>
+                <li class="root-link-drawer">
+                    <a href="jeux-du-plus-ou-moins/index.html" id="link">Jeux du +/-</a>
+                    
+                </li>
+    
+                <li class="root-link-drawer"></li>
+    
+            </ul>
+
+        </nav>
+        
+    </div>
+
+    <header class="style-header">
+        <nav>
+            <ul class="main-nav">
+                <li class="root-link">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="root-link">
+                    <a href="../jeux-du-plus-ou-moins/index.html">Jeux du +/-</a>
+                </li>
+
+                <span id="btn_open_drawer" class="mdi mdi-menu mdi-36px">
+                </span>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+        <h1>
+            Jeux du plus ou moins
+        </h1>
+
+        <div class="flex">
+
+            <div class="container-jeu">
+            
+                <div class="coup-joues">
+                    <span>Nombre de coups joués :</span>
+                    <span id="nb_coups_joues"></span>
+                    <span>/</span>
+                    <span id="nb_max_coups"></span>
+                </div>
+
+                <div class="container-message">
+                    <span id="reponse_jeu"></span>
+                </div>
+
+                <div class="flex-row">
+                    <input type="number" id="valeur_saisie" name="valeur_saisie">
+                    <button id="btn_submit">
+                        Valider
+                    </button>
+
+                </div>
+
+                <ul id="liste_valeurs_saisies">
+                    
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

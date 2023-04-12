@@ -1,0 +1,33 @@
+#overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0; left: 0; bottom:0; right: 0; 
+    background-color: rgba(49,49,49, 0);
+    transition: .2s all ease-in-out;
+}
+#overlay.visible {
+    z-index: 1000;
+    background-color: rgba(49,49,49, .6);
+}
+#menu_drawer {
+    z-index: 1001;
+    position: fixed;
+    top: 0; right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #FAFAFA;
+    padding: 8px;
+    transform: translateX(100%);
+    transition: .2s all ease-in-out;
+}
+#menu_drawer.open {
+    transform: translateX(0);
+}
+
+#btn_open_menu,
+#btn_close_menu {
+    cursor: pointer;
+}
+
+
+

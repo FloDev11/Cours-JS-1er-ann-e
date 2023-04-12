@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#main_container {
+    max-width: 950px;
+    padding: 0 12px 60px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+ul {
+    margin: 0;
+}
+
+.playground-container{
+    background: #DEDEDE;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.playground-container.large{
+    max-width: none;
+}
+.playground-container.x-large{
+    max-width: none;
+    height: 700px;
+}
+
+
+/* Corner button open menu */

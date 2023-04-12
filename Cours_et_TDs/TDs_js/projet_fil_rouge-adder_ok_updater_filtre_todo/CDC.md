@@ -1,0 +1,18 @@
+- Ajouter une demande : 
+    - Nom de l'entreprise,
+    - l'adresse,
+    - numéro de téléphone principale / autre tel
+    - email principal / Autres emails,
+    - site internet,
+    - réseaux sociaux,
+    - Logo,
+    - effectif,
+    - gérant,
+    - Chiffre d'affaire n-1,    
+    - Activités 1 à n,
+    - Lettre de motivation personnalisée,
+- Après premier contact 
+    - Date de contact,
+    - Type de contact : mail / téléphone / physique
+    - Missions proposées par l'entreprise,
+    - Dates possibles pour stage,

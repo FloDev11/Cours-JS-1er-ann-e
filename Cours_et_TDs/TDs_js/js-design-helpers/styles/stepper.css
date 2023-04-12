@@ -1,0 +1,38 @@
+.stepper-skylight {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.steps-container {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    transition: .3s all ease-in-out;
+}
+.actions-stepper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+.actions-stepper .prev-step, .actions-stepper .next-step {
+    cursor: pointer;
+}
+
+.step {
+    opacity: 1;
+    transition: .3s all ease-in-out;
+}
+.step.hidden {
+    opacity: 0;
+}
+
+.exemple-stepper-image-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+}
+.exemple-stepper-image-container img {
+    max-height: 100%;
+}

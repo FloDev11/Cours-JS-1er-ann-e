@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Tilt Warp', cursive;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    visibility: hidden;
+}
+
+#main_container {
+    padding: 12px 24px;
+}
+
+#playground {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#mot_a_trouver {
+    display: flex;
+    align-items: flex-end;
+}
+
+.lettre-a-trouver {
+    display: inline-block;
+    border-bottom: 4px solid gray;
+    height: 26px;
+    width: 18px;
+    margin-right: 4px;
+}
+.lettre-a-trouver.trouvee{
+    border-bottom: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 22px;
+}
+
+#image_du_pendu {
+    margin: auto;
+    max-width: 100%;
+}
+
+#message_utilisateur {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#lettres_testees {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+#lettres_testees li {
+    margin-right: 10px;
+    font-family: 'Tilt Warp', cursive;
+}
+#lettres_testees li:not(:last-child):after {
+    content: ','
+}
+
+.input-pendu {
+    font-family: 'Tilt Warp', cursive;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+.input-pendu:focus {
+    outline: none;
+}
+.btn-pendu {
+    height: 25px;
+    padding: 0 8px;
+    cursor: pointer;
+}

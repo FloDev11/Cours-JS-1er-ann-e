@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+#root_main {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#exercice_3 > img {
+    max-width: 100%;
+}
+
+/* Exercice 3 */
+
+#exercice_jour_nuit.nuit{
+    background-color: #424242;
+    color: white;
+    transition: .3s all ease-out;
+}
+
+#exercice_jour_nuit.jour{
+    background-color: white;
+    color: black;
+    transition: .3s all ease-out;
+}

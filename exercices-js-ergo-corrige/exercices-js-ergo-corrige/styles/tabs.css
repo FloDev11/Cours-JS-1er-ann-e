@@ -1,0 +1,47 @@
+
+
+#skylight_tabs {
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+}
+#tabs_panels_container {
+    width: 200%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    transition: .3s all ease-in-out;
+}
+.panel-tab {
+    width: 50%;
+    height: 100%;
+}
+#panel_hompage {
+    background: #42d45f;
+}
+#panel_liste {
+    background: #ffc93c;
+}
+
+#tab_nav_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #DADADA;
+}
+.tabitem-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#tabnav_home {
+    border-right: 1px solid #494949;
+}

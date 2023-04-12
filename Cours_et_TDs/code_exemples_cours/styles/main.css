@@ -1,0 +1,14 @@
+body, html {
+    margin: 0;
+}
+
+#main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#header_logo {
+    max-height: 80%;
+}

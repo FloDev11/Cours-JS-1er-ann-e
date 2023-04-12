@@ -1,0 +1,41 @@
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,0);
+    transition: .3s all ease-in-out;
+}
+
+#overlay.open {
+    z-index: 200;
+    background-color: rgba(0,0,0,.4);
+} 
+
+.modal {
+    position: absolute;
+    z-index: -1;
+    max-height: 90%;
+    max-width: 80%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+    background-color: #FAFAFA;
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 201;
+    /* height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%; */
+    transform: translateX(-50%) translateY(-50%) scale(1);
+
+}

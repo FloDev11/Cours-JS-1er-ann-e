@@ -1,0 +1,1 @@
+console.log('Script chargé en fin de page');
